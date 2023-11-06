@@ -7,8 +7,10 @@ resource "aws_ssm_parameter" "param" {
 
 variable "params" {
   default = [
-    {name="demo1",value="demo1",type="String"},
-    {name="demo2",value="demo2",type="String"},
-    {name="demo3",value="demo3",type="String"},
+    {name="roboshop.frontend.catalogue_url",value="https://catalogue-dev.devops86.store",type="String"},
+    {name="roboshop.frontend.user_url",value="https://user-dev.devops86.store",type="String"},
+    {name="roboshop.frontend.cart_url",value="https://cart-dev.devops86.store",type="String"},
+    {name="roboshop.frontend.payment_url",value="https://payment-dev.devops86.store",type="String"},
+    {name="roboshop.frontend.shipping_url",value="https://shipping-dev.devops86.store",type="String"},
   ]
 }
