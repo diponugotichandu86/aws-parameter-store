@@ -7,11 +7,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params" {
   default = [
-    { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.rdevopsb73.online:8080/", type = "String" },
-    { name = "roboshop.dev.frontend.user_url", value = "http://user-dev.rdevopsb73.online:8080/", type = "String" },
-    { name = "roboshop.dev.frontend.cart_url", value = "http://cart-dev.rdevopsb73.online:8080/", type = "String" },
-    { name = "roboshop.dev.frontend.payment_url", value = "http://payment-dev.rdevopsb73.online:8080/", type = "String" },
-    { name = "roboshop.dev.frontend.shipping_url", value = "http://shipping-dev.rdevopsb73.online:8080/", type = "String" },
+    { name = "roboshop.dev.frontend.catalogue_url", value = "https://catalogue-dev.devops86.store:8080/", type = "String" },
+    { name = "roboshop.dev.frontend.user_url", value = "https://user-dev.devops86.store:8080/", type = "String" },
+    { name = "roboshop.dev.frontend.cart_url", value = "https://cart-dev.devops86.store:8080/", type = "String" },
+    { name = "roboshop.dev.frontend.payment_url", value = "https://payment-dev.devops86.store:8080/", type = "String" },
+    { name = "roboshop.dev.frontend.shipping_url", value = "https://shipping-dev.devops86.store:8080/", type = "String" },
 
     {name="roboshop.dev.cart.redis_host",value="redis-dev.devops86.store",type="String"},
     {name="roboshop.dev.cart.catalogue_host",value="catalogue-dev.devops86.store",type="String"},
